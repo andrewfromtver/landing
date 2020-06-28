@@ -63,7 +63,7 @@ body {
 }
 .btn__group {
     width: 90vw;
-    max-width: 1200px;
+    max-width: 750px;
     margin-bottom: 25px;
 }
 .btn__group > button {
