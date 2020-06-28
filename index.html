@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <title>Андраник Саркисян</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <a href="" class="nav__link">Главная</a>
+                <a href="https://vk.com/id_69_tver" target="blank" class="nav__link">vk.com</a>
+                <a href="http://instagram.com/andrewfromtver" target="blank" class="nav__link">Instagram</a>
+            </div>
+        </header>
+        <div class="background">
+            <h3 class="title" id="top">Саркисян Андраник Александрович</h3>
+            <div class="row btn__group">
+                <button class="nav__btn" onclick="goTo('center')">Услуги</button>
+                <button class="nav__btn" onclick="goTo('projects')">Мои проекты</button>
+                <button class="nav__btn" onclick="goTo('contacts')">Контакты</button>
+            </div>
+                   <div class="info">
+                        <p>Привет!</p>
+                        <p>Меня зовут Андраник Саркисян.</p>
+                        <p>Я делаю лэндинги и сайты под ключ для Вас и Вашего бизнеса!</p>
+                    </div>
+                    <div class="row me">
+                        <img class="me__1" onclick="show('meFirst')" src="./img/me_1.jpg" alt="me">
+                        <img class="me__1" onclick="show('meSecond')" src="./img/me_2.jpg" alt="me">
+                        <img class="me__1" onclick="show('meThird')" src="./img/me_3.jpg" alt="me">
+                    </div>
+                    <div class="info">
+                        <h3 class="subtitle">Я помогу Вам:</h3>
+                    </div>
+                    <img class="item__down__main" src="./img/down.png" alt="down">
+                <div class="row">
+                    <div class="info first" id="center">
+                        <table>
+                            <tr>
+                                <td class="table__item">
+                                    <img class="item__image left" id="design" src="./img/design.png" onclick="show('design')" onmouseover="hover(this)" onmouseout="unhover(this)" alt="design">
+                                </td>
+                                <td class="table__item">
+                                    Разработать дизайн
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <img class="item__checked__right" src="./img/checked.png" alt="checked">
+                </div>
+                    <img class="item__down" src="./img/down_right.png" alt="down">
+                <div class="row">
+                    <img class="item__checked__left" src="./img/checked.png" alt="checked">
+                    <div class="info second">
+                        <table>
+                            <tr>
+                                <td class="table__item">
+                                    Воплотить макеты в жизнь
+                                </td>
+                                <td class="table__item">
+                                    <img class="item__image right" id="model" src="./img/model.png" onclick="show('model')" onmouseover="hover(this)" onmouseout="unhover(this)" alt="model">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>   
+                    <img class="item__down" src="./img/down_left.png" alt="down">
+                <div class="row">
+                    <div class="info third">
+                        <table>
+                            <tr>
+                                <td class="table__item">
+                                    <img class="item__image left" id="prod" src="./img/prod.png" onclick="show('prod')" onmouseover="hover(this)" onmouseout="unhover(this)" alt="prod">
+                                </td class="table__item">
+                                <td class="table__item">
+                                    Запустить в прод
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <img class="item__checked__right" src="./img/checked.png" alt="checked">
+                </div>
+                    <img class="item__down" src="./img/down_right.png" alt="down">
+                <div class="row">
+                    <img class="item__checked__left" src="./img/checked.png" alt="checked">
+                    <div class="info last">
+                        <table>
+                            <tr>
+                                <td class="table__item">
+                                    Оптимизировать расходы
+                                </td>
+                                <td class="table__item">
+                                    <img class="item__image right" id="money" src="./img/money.png" onclick="show('money')" onmouseover="hover(this)" onmouseout="unhover(this)" alt="money">
+                                </td>
+                            </tr>
+                        </table>
+                   </div>
+                </div>
+                   <img class="item__goal" src="./img/goal.png" alt="money">
+                   <h3 class="title">Проекты и обратная связь</h3>
+                   <div class="info">
+                        <h3 class="subtitle">Мои проекты:</h3>
+                    </div>
+            <div class="info__box">
+                <div class="row">
+                    <div class="item">
+                    <a class="body__link">Trailerpark</a> 
+                    </div>
+                    <div class="item">
+                    <a class="body__link">Moneycalc</a> 
+                    </div>
+                </div>
+                <div class="row" id="projects">
+                    <div class="image">
+                        <a href="https://andrewfromtver.github.io/trailerpark-rebranding/" target="blank">
+                            <img class="proj__image" src="./img/proj_1.png" alt="Background">
+                        </a>
+                    </div>
+                    <div class="image">
+                        <a href="https://andrewfromtver.github.io/moneycalc_indexedDB_edition/" target="blank">
+                            <img class="proj__image" src="./img/proj_2.png" alt="Background">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img class="item__down__main" src="./img/down.png" alt="down">
+            <div class="contacts">
+                <div class="info">
+                    <h3 class="subtitle">Если Вам нужен сайт, просто напишите мне!</h3>
+                </div>
+                <div class="info" id="contacts">
+                    <textarea class="msg" type="" placeholder="Ваше сообщение"></textarea>
+                    <input class="name" type="text" placeholder="Ваше имя">
+                    <input class="email" type="text" placeholder="Ваш e-mail">
+                    <button class="send__btn" onclick="sendRequest()">Отправить</button>
+                </div>
+            </div>
+            <div class="row">
+                <img class="me__2" src="./img/me_3.jpg" alt="Background">
+            </div>
+        </div>
+        <div class="up__btn" onclick="goTo('top')">
+            <img src="./img/up_btn.png" alt="up" height="75px" width="75px">
+        </div>
+            <div class="popup__sended__request">
+                <img src="./img/close.png" class="close" alt="close" onclick="closePopup()">
+                <div class="row">
+                    <h3 class="info feedback">Спасибо за обращение, я свяжусь с Вами по указанным реквизитам в ближайшее время!</h3>
+                </div>
+            </div>
+            <div class="popup__info">
+                <img src="./img/close.png" class="close" alt="close" onclick="closePopup()">
+            </div>
+        <footer>
+            <div class="footer">
+                <p>Andranik Sarkisyan 2020</p>
+            </div>
+        </footer>
+        <script src="./js/ui_control.js"></script>
+    </body>
+</html>
