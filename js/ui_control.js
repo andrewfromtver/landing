@@ -1,3 +1,10 @@
+document.querySelector('.content').style.display = "none";
+
+window.onload = function() {
+    document.querySelector('.content').style.display = "";
+    document.querySelector('.loader__placeholder').style.display = "none";
+}
+
 let devType = null;
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
     devType = "mobile";
@@ -17,8 +24,7 @@ else {
             './img/design.gif',
             './img/model.gif',
             './img/prod.gif',
-            './img/money.gif',
-            './img/popup_background.gif'
+            './img/money.gif'
         );
     });
 }
