@@ -4,6 +4,22 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phon
 }
 else {
     devType = "pc"
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = new Array();
+    
+        function preloadImages(...images) {
+            images.forEach((image, i) => {
+                image = new Image();
+                image.src = preloadImages.arguments[i];
+            });
+        };
+        preloadImages(
+            './img/design.gif',
+            './img/model.gif',
+            './img/prod.gif',
+            './img/money.gif'
+        );
+    });
 }
 if (devType == "mobile") {
     document.querySelector('.main__items__pc').style.display = "none";
