@@ -6,7 +6,7 @@ window.onload = function() {
 }
 
 let devType = null;
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) || document.documentElement.clientWidth < 700 ) {
     devType = "mobile";
 }
 else {
@@ -30,8 +30,10 @@ else {
 }
 if (devType == "mobile") {
     document.querySelector('.main__items__pc').style.display = "none";
-    document.querySelector('.pc__btn').style.display = "none";
+    document.querySelector('.pc__btn__first').style.display = "none";
+    document.querySelector('.pc__btn__second').style.display = "none";
     document.querySelector('.pc__me').style.display = "none";
+    document.querySelector('.projects').style.display = "none";
     document.querySelector('.pc__me__set').style.display = "none";
 }
 
