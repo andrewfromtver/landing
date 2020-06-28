@@ -40,7 +40,7 @@ body {
     background-color: tomato;
     font-size: 12px;
 }
-.background {
+.background, .main__items__pc {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -299,8 +299,8 @@ body {
     cursor: pointer;
     opacity: 0.75;
     background-color: #fff;
-    height: 75px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
     margin: 5vw;
     border-radius: 15px;
     box-shadow: 10px 7px 10px #333;
