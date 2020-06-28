@@ -1,3 +1,18 @@
+let devType = null;
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    alert("Вы используете мобильное устройство (телефон или планшет).")
+    devType = "mobile";
+}
+else {
+    devType = "pc"
+}
+if (devType == "mobile") {
+    document.querySelector('.main__items__pc').style.display = "none";
+    document.querySelector('.pc__btn').style.display = "none";
+    document.querySelector('.pc__me').style.display = "none";
+    document.querySelector('.pc__me__set').style.display = "none";
+}
+
 function hover(element) {
     let type = element.id;
     element.setAttribute('src', `./img/${type}.gif`);
