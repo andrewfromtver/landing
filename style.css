@@ -329,6 +329,14 @@ body {
     box-shadow: 10px 7px 10px #333;
 }
 .popup__info {
+    background-image: url("./img/popup_background.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     text-align: center;
     align-items: center;
     position: fixed;
