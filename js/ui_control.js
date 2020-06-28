@@ -1,5 +1,6 @@
 let devType = null;
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    alert("Вы используете мобильное устройство (телефон или планшет).")
     devType = "mobile";
 }
 else {
