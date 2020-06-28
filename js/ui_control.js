@@ -17,7 +17,8 @@ else {
             './img/design.gif',
             './img/model.gif',
             './img/prod.gif',
-            './img/money.gif'
+            './img/money.gif',
+            './img/popup_background.gif'
         );
     });
 }
