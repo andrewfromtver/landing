@@ -293,6 +293,9 @@ body {
     opacity: 1;
     cursor: pointer;
 }
+.me__1:active {
+    box-shadow: none;
+}
 .item__image:hover {
     opacity: 1;
     cursor: pointer;
