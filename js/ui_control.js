@@ -31,7 +31,6 @@ else {
 if (devType == "mobile") {
     document.querySelector('.main__items__pc').style.display = "none";
     document.querySelector('.pc__btn__first').style.display = "none";
-    document.querySelector('.pc__btn__second').style.display = "none";
     document.querySelector('.pc__me').style.display = "none";
     document.querySelector('.pc__me__set').style.display = "none";
 }
